@@ -1,17 +1,17 @@
 ---
 layout: workshop
 root: .
-venue: Auditorium Maximum, Jagiellonian University 
+venue: Auditorium Maximum, Jagiellonian University
 address: ul. Krupnicza 33, Kraków
 country: Poland
 language: en
 latlng:  50.062828,19.925101
 humandate: Feb 21-22, 2015
-humantime: 9:30 - 17:30 
+humantime: 9:30 - 17:30
 startdate: 2015-02-21
 enddate: 2015-02-22
 instructor: ["Paulina Lach","Piotr Banaszkiewicz", "Klemens Noga", "Leszek Tarkowski"]
-helper: [ "TBA"]
+helper: ["Maciej Czuchry", "Iwona Grelowska", "Marcin Klimek", "Jakub Kruczek"]
 contact: klemens.noga@cyfronet.pl
 etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
 eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
@@ -40,9 +40,13 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   height="206px"
   scrolling="auto">
 </iframe>
+{% else %}
+<p>
+  Rejestracja jeszcze nie została otwarta.
+</p>
 {% endif %}
 
-<h2>General Information</h2>
+<h2>Informacje ogólne</h2>
 
 <!--
   INTRODUCTION
@@ -51,14 +55,13 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  Warsztaty <a href="{{site.swc_site}}">Software Carpentry</a> pomagają
+  naukowcom i inżynierom rozwijać ich umiejętności programistyczne, dzięki
+  którym są oni bardziej produktywni w swojej codziennej pracy. W czasie
+  dwudniowych warsztatów uczestnicy zachęcani są by pracować razem i stosować
+  umiejętności zdobyte podczas szkolenia do rozwiązywania własnych problemów
+  badawczych. Warsztaty Software Carpentry odbywają się na całym świecie od
+  ponad 5 lat i cieszą się ogromną popularnością.
 </p>
 
 <!--
@@ -68,8 +71,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   workshop is only open to people from a particular institution.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  <strong>Dla kogo:</strong>
+  Warsztaty są skierowane dla osób zajmujących się zawodowo lub
+  zainteresowanych nauką oraz przedmiotami inżynieryjnymi. We wszystkich
+  tych dziedzinach informatyzacja jest powszechna i znajomość zagadnień
+  związanych z programowaniem jest koniecznością.
 </p>
 
 <!--
@@ -82,11 +88,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 {% if page.latlng %}
 <p>
-  <strong>Where:</strong>
+  <strong>Miejsce:</strong>
   {{page.address}}.
-  Get directions with
+  Zobacz na
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
+  lub
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
@@ -97,10 +103,10 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with
-  a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
+  <strong>Wymagania:</strong>
+  Uczestnicy muszą przynieść własne laptopy uprzednio skonfigurowane
+  <a href="#setup">zgodnie z instrukcją</a>. Ponadto uczestnicy zobligowani
+  są do przestrzegania Software Carpentry
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
@@ -112,14 +118,13 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   used.
 -->
 <p>
-  <strong>Contact</strong>:
-  Please mail
+  <strong>Kontakt</strong>:
+  Wszelkie pytania prosimy kierować na adres
   {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>.
   {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>.
   {% endif %}
-  for more information.
 </p>
 
 <hr/>
@@ -131,11 +136,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Schedule</h2>
+<h2>Plan</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Dzień 1 - sobota, 22 lutego 2015</h3>
     <table class="table table-striped">
       <tr> <td>09:30</td>  <td>Greetings and laptops setup</td> </tr>
       <tr> <td>10:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
@@ -149,7 +154,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>Dzień 2 - niedziela, 23 lutego 2015</h3>
     <table class="table table-striped">
       <tr> <td>09:30</td>  <td>Morning warm-up</td> </tr>
       <tr> <td>09:40</td>  <td>Building programs with Python</td> </tr>
@@ -428,7 +433,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 	<strong>For OS X 10.8 and higher</strong>, install Git for Mac
 	by downloading and running
 	<a href="http://sourceforge.net/projects/git-osx-installer/files/latest/download">the installer</a>.
-	After installing Git, there will not be anything in your <code>/Applications</code> folder, 
+	After installing Git, there will not be anything in your <code>/Applications</code> folder,
 	as Git is a command line program.
 	<strong>For older versions of OS X (10.5-10.7)</strong> use the
 	most recent available installer for your
@@ -511,7 +516,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 	<li>
           Download the installer that matches your operating
           system and save it in your home folder.
-	  Download the default Python 2 installer (do not follow the link to version 3). 
+	  Download the default Python 2 installer (do not follow the link to version 3).
 	</li>
 	<li>
           Open a terminal window.
@@ -534,51 +539,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </div>
   </div>
 </div> <!-- End of 'Python' section. -->
-
-<div> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	You can download the binary files for your distribution
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-	you can use your package manager (e.g. for Debian/Ubuntu
-	run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
 
 <div> <!-- Start of 'SQLite' section. -->
   <h3>SQLite</h3>
