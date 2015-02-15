@@ -92,30 +92,13 @@ eventbrite: 15742501245
   z programowaniem (zmienne, pętle, warunki itd.) będzie pomocna, ale nie jest wymagana.
 <br/><br/>
 
-<div class="alert" style=" background-color: #FFF4C2;"> <span style="font-size: 14pt;">Uczestnicy proszeni są o przyniesienie na warsztaty <strong>własnych laptopów</strong>. Konieczne będzie skonfigurowanie ich <strong> przed </strong> warsztatami,zgodnie z podanymi poniżej <a href="#setup">instrukcjami</a>.</span></div>
+<div class="alert" style=" background-color: #F5EBBF;"> <span style="font-size: 14pt;">Uczestnicy proszeni są o przyniesienie na warsztaty <strong>własnych laptopów</strong>. Konieczne będzie skonfigurowanie ich <strong> przed </strong> warsztatami,zgodnie z podanymi poniżej <a href="#setup">instrukcjami</a>.</span></div>
 
 Warsztaty odbywać się będą po polsku, ale <strong>wszystkie materiały (włącznie z instrukcjami, jak skonfigurować laptopy)
 są w języku angielskim</strong>.
 <br/>
 Wszyscy uczestnicy zobowiązani są przestrzegać Software Carpentry <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
 W skrócie, prosimy odnosić się do siebie nawzajem z szacunkiem, kulturalnie i uprzejmie. 
-</p>
-
-<!--
-  CONTACT EMAIL ADDRESS
-
-  Display the contact email address set in the header.  If an address
-  isn't set in the header, the Software Carpentry admin address is
-  used.
--->
-<p>
-  <strong>Kontakt</strong>:
-  Wszelkie pytania prosimy kierować na adres
-  {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>.
-  {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>.
-  {% endif %}
 </p>
 
 <!--
@@ -142,8 +125,24 @@ W skrócie, prosimy odnosić się do siebie nawzajem z szacunkiem, kulturalnie i
 {% else %}
 {% endif %}
 
-<hr/>
+<!--
+  CONTACT EMAIL ADDRESS
 
+  Display the contact email address set in the header.  If an address
+  isn't set in the header, the Software Carpentry admin address is
+  used.
+-->
+<p>
+  <strong>Kontakt</strong>:
+  Wszelkie pytania prosimy kierować na adres
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>.
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>.
+  {% endif %}
+</p>
+
+<hr/>
 <!--
   SCHEDULE
 
@@ -176,9 +175,9 @@ W skrócie, prosimy odnosić się do siebie nawzajem z szacunkiem, kulturalnie i
       <tr> <td>11:00</td>  <td>Przerwa</td> </tr>
       <tr> <td>11:15</td>  <td>Konrola wersji z użyciem Gita - ciąg dalszy</td> </tr>
       <tr> <td>13:00</td>  <td>Przerwa na obiad</td> </tr>
-      <tr> <td>14:30</td>  <td>Konrola wersji z użyciem Git i GitHub</td> </tr>
-      <tr> <td>15:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>15:45</td>  <td>Wprowadzenie do pracy z danymi z użyciem SQL<</td> </tr>
+      <tr> <td>14:30</td>  <td>Konrola wersji z użyciem Gita i GitHub</td> </tr>
+      <tr> <td>15:30</td>  <td>Przerwa</td> </tr>
+      <tr> <td>15:45</td>  <td>Wprowadzenie do pracy z danymi z użyciem SQL</td> </tr>
       <tr> <td>17:15</td>  <td>Podsumowanie warsztatów i zakończenie</td> </tr>
     </table>
   </div>
