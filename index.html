@@ -4,16 +4,16 @@ root: .
 venue: Auditorium Maximum, Jagiellonian University
 address: ul. Krupnicza 33, Kraków
 country: Poland
-language: en
+language: pl
 latlng:  50.062828,19.925101
 humandate: Feb 21-22, 2015
 humantime: 9:30 - 17:30
 startdate: 2015-02-21
 enddate: 2015-02-22
-instructor: ["Paulina Lach","Piotr Banaszkiewicz", "Klemens Noga", "Leszek Tarkowski"]
+instructor: ["Paulina Lach", "Leszek Tarkowski", "Piotr Banaszkiewicz", "Klemens Noga",]
 helper: ["Maciej Czuchry", "Iwona Grelowska", "Marcin Klimek", "Jakub Kruczek"]
 contact: klemens.noga@cyfronet.pl
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
+etherpad: 15742501245
 eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
 <!--
@@ -24,27 +24,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   changes are good.
 -->
 
-<!--
-  EVENTBRITE
 
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="206px"
-  scrolling="auto">
-</iframe>
-{% else %}
-<p>
-  Rejestracja jeszcze nie została otwarta.
-</p>
-{% endif %}
 
 <h2>Informacje ogólne</h2>
 
@@ -75,7 +55,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   Warsztaty są skierowane dla osób zajmujących się zawodowo lub
   zainteresowanych nauką oraz przedmiotami inżynieryjnymi. We wszystkich
   tych dziedzinach informatyzacja jest powszechna i znajomość zagadnień
-  związanych z programowaniem jest koniecznością.
+  związanych z programowaniem jest koniecznością. Warsztaty Software Carpentry
+  nastawione są na ćwiczenia praktyczne, podczas których uczestnicy uczą się jak
+  pracować z linią komend (środowisko Unix), kontrolą wersji (Git i
+  GitHub) oraz poznają podstawy dobrych praktyk programistycznych z użyciem
+  języka Python i baz danych z SQL.
 </p>
 
 <!--
@@ -104,10 +88,19 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 <p>
   <strong>Wymagania:</strong>
-  Uczestnicy muszą przynieść własne laptopy uprzednio skonfigurowane
-  <a href="#setup">zgodnie z instrukcją</a>. Ponadto uczestnicy zobligowani
-  są do przestrzegania Software Carpentry
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  Warsztaty przeznaczone są dla osób początkujących. Podstawowa znajomość zagadnień związanych
+  z programowaniem (zmienne, pętle, warunki itd.) będzie pomocna, ale nie jest wymagana.
+<br/><br/>
+
+<div class="alert"> <span style="font-size: 14pt;">Uczestnicy proszeni są o przyniesienie na warsztaty
+<strong>własnych laptopów</strong>. Konieczne będzie skonfigurowanie ich <strong> przed </strong> warsztatami,
+zgodnie z podanymi poniżej <a href="#setup">instrukcjami</a>. </span></div>
+
+Warsztaty odbywać się będą po polsku, ale <strong>wszystkie materiały (włącznie z instrukcjami, jak skonfigurować laptopy)
+są w języku angielskim</strong>.
+<br/>
+Wszyscy uczestnicy zobowiązani są przestrzegać Software Carpentry <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
+W skrócie, prosimy odnosić się do siebie nawzajem z szacunkiem, kulturalnie i uprzejmie. 
 </p>
 
 <!--
@@ -127,6 +120,30 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   {% endif %}
 </p>
 
+<!--
+  EVENTBRITE
+
+  This block includes the Eventbrite registration widget if
+  'eventbrite' has been set in the header.  You can delete it if you
+  are not using Eventbrite, or leave it in, since it will not be
+  displayed if the 'eventbrite' field in the header is not set.
+-->
+<h4>Rejestracja</h4>
+<p>
+  Prosimy rejestrować się przez Eventbrite. Uczestnictwo w warsztatach jest bezpłatne.
+  Pewna pula miejsc zarezerwowana jest dla doktorantów Uniwersytetu Jagiellońskiego
+</p>
+{% if page.eventbrite %}
+<iframe
+  src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  frameborder="0"
+  width="100%"
+  height="206px"
+  scrolling="auto">
+</iframe>
+{% else %}
+{% endif %}
+
 <hr/>
 
 <!--
@@ -142,29 +159,29 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <div class="col-md-6">
     <h3>Dzień 1 - sobota, 22 lutego 2015</h3>
     <table class="table table-striped">
-      <tr> <td>09:30</td>  <td>Greetings and laptops setup</td> </tr>
-      <tr> <td>10:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>11:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>11:15</td>  <td>Automating tasks with the Unix shell continued</td> </tr>
-      <tr> <td>13:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>14:30</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>16:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:15</td>  <td>Version control with Git continued</td> </tr>
-      <tr> <td>17:15</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:30</td>  <td>Powitanie. Pomoc przy konfiguracji laptopów.</td> </tr>
+      <tr> <td>10:00</td>  <td>Praca z linią komend</td> </tr>
+      <tr> <td>11:00</td>  <td>Przerwa</td> </tr>
+      <tr> <td>11:15</td>  <td>Praca z linią komend - ciąg dalszy</td> </tr>
+      <tr> <td>13:00</td>  <td>Przerwa na obiad</td> </tr>
+      <tr> <td>14:30</td>  <td>Programowanie z użyciem Pythona</td> </tr>
+      <tr> <td>16:00</td>  <td>Przerwa</td> </tr>
+      <tr> <td>16:15</td>  <td>Programowanie z użyciem Pythona - ciąg dalszy</td> </tr>
+      <tr> <td>17:15</td>  <td>Podsumowanie dnia i zakończenie</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Dzień 2 - niedziela, 23 lutego 2015</h3>
     <table class="table table-striped">
-      <tr> <td>09:30</td>  <td>Morning warm-up</td> </tr>
-      <tr> <td>09:40</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>11:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>11:15</td>  <td>Building programs with Python continued</td> </tr>
-      <tr> <td>13:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>14:30</td>  <td>Building programs with Python continued</td> </tr>
+      <tr> <td>09:30</td>  <td>Powitanie i poranna rozgrzewka</td> </tr>
+      <tr> <td>09:40</td>  <td>Konrola wersji z użyciem Gita</td> </tr>
+      <tr> <td>11:00</td>  <td>Przerwa</td> </tr>
+      <tr> <td>11:15</td>  <td>Konrola wersji z użyciem Gita - ciąg dalszy</td> </tr>
+      <tr> <td>13:00</td>  <td>Przerwa na obiad</td> </tr>
+      <tr> <td>14:30</td>  <td>Konrola wersji z użyciem Git i GitHub</td> </tr>
       <tr> <td>15:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>15:45</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>17:15</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>15:45</td>  <td>Wprowadzenie do pracy z danymi z użyciem SQL<</td> </tr>
+      <tr> <td>17:15</td>  <td>Podsumowanie warsztatów i zakończenie</td> </tr>
     </table>
   </div>
 </div>
