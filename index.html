@@ -73,13 +73,32 @@ eventbrite: 15742501245
 {% if page.latlng %}
 <p>
   <strong>Miejsce:</strong>
-  {{page.address}}.
+  {{page.address}}. Sala Konferencyjna, poziom II.</br>
   Zobacz na
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   lub
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
+
+<h4>Warsztaty współoranizują </h4>
+
+<div class="row-fluid">
+  <table width="100%" align=right>
+    <tr>
+      <td><a href="http://http://www.doktoranci.uj.edu.pl/"><img
+  src="{{page.root}}/img/LOGO.TDUJ.poziome1.png" alt="Towarzystwo Doktorantów UJ" /></a>
+      </td>
+      <td><a href="http://www.czterybity.pl/"><img
+  src="{{page.root}}/img/logo.cztery.bity.png" alt="Cztery Bity"/></a>
+      </td>
+      <td><a href="http://www.cyfronet.krakow.pl/"><img
+  src="{{page.root}}/img/cyfronet_logo_monochr.png" alt="ACK Cyfronet AGH" /></a>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 <!--
   SPECIAL REQUIREMENTS
