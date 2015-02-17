@@ -11,7 +11,8 @@ humantime: 9:30 - 17:30
 startdate: 2015-02-21
 enddate: 2015-02-22
 instructor: ["Paulina Lach", "Leszek Tarkowski", "Piotr Banaszkiewicz", "Klemens Noga",]
-helper: ["Maciej Czuchry", "Iwona Grelowska", "Marcin Klimek", "Jakub Kruczek"]
+helper: ["Maciej Czuchry", "Iwona Grelowska", "Marcin Klimek", "Jakub
+Kruczek", "Tomasz Jonak"]
 contact: klemens.noga@cyfronet.pl
 etherpad: https://etherpad.mozilla.org/2015-02-21-Krakow
 eventbrite: 15742501245
@@ -73,7 +74,7 @@ eventbrite: 15742501245
 {% if page.latlng %}
 <p>
   <strong>Miejsce:</strong>
-  {{page.address}}. Sala Konferencyjna, poziom II.</br>
+  {{page.address}}. <strong>Sala Konferencyjna, poziom II.</strong></br>
   Zobacz na
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   lub
@@ -606,6 +607,40 @@ W skrócie, prosimy odnosić się do siebie nawzajem z szacunkiem, kulturalnie i
       </p>
     </div>
   </div>
+  <h4 id="firefox-sqlite">Firefox SQLite Plugin - for all operating systems</h4>
+  <p>
+  Instead of using <code>sqlite3</code> from the command line,
+  you may use <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/">this plugin</a>
+  for Firefox instead.
+  To install it:
+  </p>
+  <ul>
+    <li>
+    Start Firefox.
+    </li>
+    <li>
+    Go to the <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/">plugin homepage</a>.
+    </li>
+    <li>
+    Click the "Add Now" button.
+    </li>
+    <li>
+    Click "Install Now" on the dialog that appears after the download completes.
+    </li>
+    <li>
+    Restart Firefox when prompted.
+    </li>
+    <li>
+    To check that the plugin installed correctly, select "SQLite Manager" from the "Tools" menu.
+    </li>
+  </ul>
+  <p>
+  In newer versions of Firefox, the menu bar isn't always displayed. To make
+  it appear, use the <code>Alt</code> key next to the space bar on your
+  keyboard, or consult
+  the <a href="https://support.mozilla.org/en-US/kb/what-happened-to-the-file-edit-and-view-menus">support
+  page</a> from Firefox for additional help.
+  </p>
 </div> <!-- End of 'SQLite' section. -->
 
 <!--
